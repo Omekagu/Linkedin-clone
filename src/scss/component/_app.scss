@@ -1,0 +1,8 @@
+.app {
+  background-color: $color--primary;
+  @include flex(null, center, column);
+
+  &__body {
+    @include flex(null, null, null);
+  }
+}

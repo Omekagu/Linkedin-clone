@@ -1,0 +1,18 @@
+.headerOption {
+  @include flex(null, center, column);
+  margin-right: 20px;
+  cursor: pointer;
+  color: $color--gray;
+
+  &:hover {
+    color: $color--black;
+  }
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  &__icon {
+    object-fit: contain;
+    height: 25px !important;
+  }
+}

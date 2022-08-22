@@ -1,0 +1,31 @@
+.post {
+  background-color: $color--white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+
+  &__header {
+    @include flex(null, center, null);
+    margin-bottom: 1rem;
+  }
+  &__info {
+    margin-left: 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      text-transform: lowercase;
+      font-size: 1.2rem;
+      color: $color--gray;
+    }
+  }
+
+  &__body {
+    overflow-wrap: anywhere;
+  }
+  &__buttons {
+    @include flex(space-evenly, center, null);
+  }
+}

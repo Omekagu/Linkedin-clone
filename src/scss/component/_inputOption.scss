@@ -1,0 +1,16 @@
+.inputOption {
+  @include flex(null, center, null);
+  margin: 1.5rem 1rem 0 0;
+  color: $color--gray;
+  padding: 1rem;
+  cursor: pointer;
+  gap: 0.5rem;
+  h4 {
+    margin-left: 0.5rem;
+  }
+
+  &:hover {
+    background-color: whitesmoke;
+    border-radius: 1rem;
+  }
+}

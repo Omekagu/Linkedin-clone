@@ -1,0 +1,88 @@
+.sidebar {
+  top: 80px;
+  position: sticky;
+  border-radius: 1rem;
+  text-align: center;
+  height: fit-content;
+
+  &__avatar {
+    margin-bottom: 1rem;
+  }
+
+  &__top {
+    @include flex(null, center, column);
+    border: 1px solid $color--light--gray;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: $color--white;
+    padding-bottom: 10px;
+
+    h2 {
+      margin: 0.1rem;
+    }
+
+    h4 {
+      color: $color--gray;
+      font-size: 1.3rem;
+    }
+  }
+  &__img {
+    margin-bottom: -2rem;
+    width: 100%;
+    height: 6vh;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: cover;
+  }
+  &__stat {
+    margin-top: 10px;
+    @include flex(space-between, null, null);
+
+    p {
+      color: $color--gray;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-left: auto;
+    }
+    h5 {
+      color: $color--gray;
+      font-size: 1rem;
+    }
+  }
+  &__stats {
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    border: 1px solid $color--light--gray;
+    background-color: $color--white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  &__statNumber {
+    font-weight: bold;
+    color: $color--blue !important;
+  }
+  &__button {
+    text-align: left;
+    padding: 0.9rem;
+    border: 1px solid $color--light--gray;
+    background-color: $color--white;
+    border-radius: 1rem;
+    margin-top: 1rem;
+  }
+  &__recentItem {
+    @include flex(null, null, null);
+    font-size: 1rem;
+    color: $color--gray;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.1rem;
+
+    &:hover {
+      background-color: whitesmoke;
+      border-radius: 1rem;
+      cursor: pointer;
+      color: $color--black;
+    }
+  }
+}

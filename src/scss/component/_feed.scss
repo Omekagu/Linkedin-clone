@@ -1,0 +1,41 @@
+.feed {
+  // flex: 0.6;
+  margin: 0 2rem;
+
+  &__inputContainer {
+    background-color: $color--white;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+  &__form {
+    @include flex(null, null, null);
+    width: 100%;
+
+    input {
+      border: none;
+      flex: 1;
+      margin-left: 1rem;
+      outline-width: 0;
+      font-weight: 600;
+    }
+    button {
+      display: none;
+    }
+  }
+  .create {
+    margin-right: auto;
+  }
+  &__input {
+    border: 1px solid $color--light--gray;
+    border-radius: 3rem;
+    @include flex(null, null, null);
+    padding: 1rem;
+    color: $color--gray;
+    padding-left: 3.5rem;
+  }
+  &__inputOption {
+    @include flex(space-evenly, null, null);
+  }
+}
